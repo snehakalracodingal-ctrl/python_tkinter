@@ -24,14 +24,11 @@ def calculate_age():
     except ValueError:
         messagebox.showerror("Error", "Please enter valid numeric values!")
 
-# Main Window
 root = tk.Tk()
 root.title("Age Calculator App")
 root.geometry("350x250")
-root.resizable(False, False)
 
-# Heading
-tk.Label(root, text="Age Calculator", font=("Arial", 16, "bold")).pack(pady=10)
+tk.Label(root, text="Age Calculator", font=("Arial", 16, "bold"))
 
 # Day
 tk.Label(root, text="Day").pack()
