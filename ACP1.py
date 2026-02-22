@@ -11,12 +11,12 @@ window.title("Product Calculator")
 window.geometry("300x250")
 
 
-tk.Label(window, text="Enter First Number").pack(pady=5)
+tk.Label(window, text="Enter First Number").pack(pady=10)
 entry1 = tk.Entry(window)
 entry1.pack()
 
 
-tk.Label(window, text="Enter Second Number").pack(pady=5)
+tk.Label(window, text="Enter Second Number").pack(pady=10)
 entry2 = tk.Entry(window)
 entry2.pack()
 
