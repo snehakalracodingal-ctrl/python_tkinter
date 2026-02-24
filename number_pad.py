@@ -1,15 +1,14 @@
-# Import necessary libraries
+
 from tkinter import *
 
-# Create Window
 root = Tk()
 root.title('Number Pad')
 root.geometry('250x300')
 
-# Create a frame to organize elements better
-# frame = Frame(master=root, height=200, width=360, bg="#d0efff")
-
-nums = [[9, 8, 7], [6, 5, 4], [3, 2, 1], ['#', 0, '*']]
+nums = [[9, 8, 7], 
+		[6, 5, 4], 
+		[3, 2, 1], 
+		['#', 0, '*']]
 
 for i in range(4):
 	root.columnconfigure(i, weight=1, minsize=75)

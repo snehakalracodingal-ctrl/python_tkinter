@@ -10,7 +10,6 @@ def calculate_age():
 
         birth_date = date(year, month, day)
         today = date.today()
-
         if birth_date > today:
             messagebox.showerror("Error", "Birth date cannot be in the future!")
             return
