@@ -6,15 +6,16 @@ from tkinter import messagebox
 root = Tk()
 root.geometry("200x200")
 
-# Function for Displaying Warning Message
-# This will be called once the button is clicked
-# messagebox.showwarning("Window Name", "Text to be displayed")
-def msg():
-	messagebox.showwarning("Alert", "Stop! Virus Found.")
 
-# Adding Button Widget to Window
+def msg():
+	#messagebox.showwarning("Alert", "Stop! Virus Found.")
+    #messagebox.showinfo("Info", "Please run a full system scan immediately.")
+    #messagebox.showerror("Error", "Virus Detected! Please take necessary actions.")
+    messagebox.askquestion("Virus Detected", "A virus has been detected on your system. Do you want to run a full system scan now?")
+
+
 button = Button(root, text="Scan for Virus", command=msg)
 button.place(x=40, y=80)
 
-# Entering main event loop
+
 root.mainloop()
