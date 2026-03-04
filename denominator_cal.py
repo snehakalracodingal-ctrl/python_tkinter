@@ -6,7 +6,7 @@ root = Tk()
 root.title("Denomination Counter")
 root.configure(bg="light blue")
 root.geometry("650x400")
-upload = Image.open("denomination.jpg")
+upload = Image.open("images.jpg")
 upload = upload.resize((300, 300))
 image = ImageTk.PhotoImage(upload)
 
@@ -60,7 +60,7 @@ def topwin():
     t1 = Entry(top)
     t2 = Entry(top)
     t3 = Entry(top)
-    
+
     def calculator():
         try:
             amount = int(entry.get())

@@ -1,4 +1,3 @@
-# Import necessary libraries
 from tkinter import *
 
 # Setting up Main Window
